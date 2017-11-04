@@ -46,5 +46,5 @@ fs.readFile(process.env.slack_token_path, function (err, data) {
 // END: Load Slack token from file.
 
 controller.hears(
-  ['hello', 'hi'], ['direct_message', 'direct_mention', 'mention'],
-  function (bot, message) { bot.reply(message, 'Meow. :smile_cat:') })
+  ['hello', 'hi', 'hanter'], ['direct_message', 'direct_mention', 'mention'],
+  function (bot, message) { bot.reply(message, '喵喵 WistronITS ~'); });
